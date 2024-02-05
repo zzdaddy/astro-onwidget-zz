@@ -20,7 +20,7 @@ const { metadata } = Astro.props;
     <slot name="header">
       <!-- TODO 此处配置 landing 的 layout 配置，对应的是 pages/landing/下的页面，由于他固定取得 links[2] 这里需要按需修改 -->
       <Header
-        links={headerData?.links[2] ? [headerData.links[4]] : undefined}
+        links={headerData?.links[4] ? [headerData.links[4]] : undefined}
         actions={[
           {
             text: 'Download',
