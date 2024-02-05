@@ -17,6 +17,8 @@
 
 <br>
 
+## 原模板界面
+
 <img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astro4.png" alt="AstroWind Theme Screenshot">
 
 [![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
@@ -29,20 +31,9 @@
 
 <br>
 
-<details open>
-<summary>Table of Contents</summary>
+## 改造后界面
 
-- [🚀 基于AstroWind的模板](#-基于astrowind的模板)
-  - [原模板Demo](#原模板demo)
-  - [使用此模板](#使用此模板)
-    - [Configuration](#configuration)
-    - [Deploy](#deploy)
-      - [Deploy to production (manual)](#deploy-to-production-manual)
-      - [Deploy to Netlify](#deploy-to-netlify)
-      - [Deploy to Vercel](#deploy-to-vercel)
-  - [License](#license)
-
-</details>
+<img src="./src/assets/images/screenshot.png">
 
 <br>
 
@@ -61,9 +52,9 @@
 
 <br>
 
-### Configuration
+### 配置
 
-Basic configuration file: `./src/config.yaml`
+配置文件位于: `./src/config.yaml`
 
 ```yaml
 site:
@@ -142,9 +133,9 @@ ui:
 
 <br>
 
-### Deploy
+### 部署
 
-#### Deploy to production (manual)
+#### 打包
 
 You can create an optimized production build with:
 
@@ -158,13 +149,13 @@ Now, your website is ready to be deployed. All generated files are located at
 `dist` folder, which you can deploy the folder to any hosting service you
 prefer.
 
-#### Deploy to Netlify
+#### 部署到 Netlify
 
 Clone this repository on own GitHub account and deploy to Netlify:
 
 [![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
 
-#### Deploy to Vercel
+#### 部署到 Vercel
 
 Clone this repository on own GitHub account and deploy to Vercel:
 
