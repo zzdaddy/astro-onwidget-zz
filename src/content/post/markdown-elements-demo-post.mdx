@@ -1,0 +1,45 @@
+---
+publishDate: 2023-01-02T00:00:00Z
+title: 这篇文章使用了 mdx
+excerpt: 这篇文章已经进行了删减，mdx 部分可以直接划到底部 LOGO部分
+category: Vue
+author: 枣把儿
+tags:
+  - vue
+  - node
+  - css
+---
+
+import Logo from '~/components/Logo.astro';
+
+
+## <a name="Inline"></a>@astrojs/mdx
+
+
+这篇文章使用了 mdx。基于@astrojs/mdx
+
+什么是 mdx 呢，可以理解为markdown 版的 jsx，可以引入你的组件、变量等。
+
+不知道什么是 jsx 的同学可以直接略过，网站毕竟是以内容为主。
+
+[[Top]](#top)
+
+## MDX
+
+```js
+---
+publishDate: 'Aug 02 2022'
+title: 'Markdown elements demo post'
+---
+import Logo from "~/components/Logo.astro";
+
+## MDX
+
+<Logo />
+```
+
+<div style="background:#eee;padding: 10px 5px">
+  <Logo />
+</div>
+
+[[Top]](#top)

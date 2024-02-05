@@ -1,0 +1,99 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: '联系我',
+        href: 'https://github.com/zzdaddy',
+        target: '_blank',
+        icon: 'tabler:external-link',
+      },
+      { text: '最新动态', href: '#blog', icon: 'tabler:news' },
+    ]}
+    image={{ src: '~/assets/images/hero.png', alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+      <!-- <Icon name="tabler:alert-square-filled" class="text-md" /> -->
+      前端&NodeJS
+      <!-- 只有横向尺寸够大才会显示 -->
+      <!-- <span class="hidden xl:inline">也许还有部分生活</span> -->
+      <span class="text-accent dark:text-white highlight"> 知识库</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">zzkb</span> 是「早早集市」的知识库，包含技术/产品/工具/生活等多个方面的内容</span
+      >
+      <span class="block mb-1 font-bold text-xs text-gray"
+        >所有文章内容均由 zzdaddy™ 原创，后续还会加入开源库、工具箱测评内容！不定时更新中~</span
+      >
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <!-- 最新博客HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts id="blog" title="最新文章" information={`文章同步更新在公众号:「早早集市」`} />
+
+  <!-- FAQs Widget ******************* -->
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'Downloads', amount: '132K' },
+      { title: 'Stars', amount: '24.8K' },
+      { title: 'Forks', amount: '10.3K' },
+      { title: 'Users', amount: '48.4K' },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <!-- <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get template',
+        href: 'https://github.com/onwidget/astrowind',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      waste more time! :P
+    </Fragment>
+  </CallToAction> -->
+</Layout>
